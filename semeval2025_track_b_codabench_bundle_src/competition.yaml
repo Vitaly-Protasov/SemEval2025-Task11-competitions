@@ -1,0 +1,124 @@
+version: 2
+title: SemEval 2025 Task 11 - Track B
+description: Multilingual emotion intensity prediction for SemEval 2025 Task 11.
+image: images/bridge-logo.png
+terms: pages/terms.md
+registration_auto_approve: true
+docker_image: codalab/codalab-legacy:py312
+make_programs_available: true
+make_input_data_available: false
+enable_detailed_results: true
+show_detailed_results_in_submission_panel: true
+show_detailed_results_in_leaderboard: true
+auto_run_submissions: true
+forum_enabled: true
+
+pages:
+  - title: Overview
+    file: pages/overview.md
+  - title: Data
+    file: pages/data.md
+  - title: Submission
+    file: pages/submission.md
+  - title: Evaluation
+    file: pages/evaluation.md
+  - title: Terms
+    file: pages/terms.md
+
+phases:
+  - index: 0
+    name: Evaluation
+    description: Track B result submission phase.
+    start: 2026-05-18 00:00:00
+    execution_time_limit: 600
+    max_submissions: 999
+    max_submissions_per_day: 999
+    starting_kit: starting_kit
+    public_data: resources/track_b_public_data.zip
+    accepts_only_result_submissions: true
+    tasks:
+      - 0
+
+tasks:
+  - index: 0
+    name: Track B
+    description: Emotion intensity prediction.
+    ingestion_program: resources/track_b_ingestion_program.zip
+    reference_data: resources/track_b_reference_data.zip
+    scoring_program: resources/track_b_scoring_program.zip
+
+solutions:
+  - index: 0
+    path: resources/track_b_zero_submission.zip
+    tasks:
+      - 0
+
+leaderboards:
+  - title: Results
+    key: main
+    columns:
+      - title: Avg Pearson r
+        key: avg_pearson_r
+        index: 0
+        sorting: desc
+        precision: 6
+      - title: Languages Scored
+        key: languages_scored
+        index: 1
+        sorting: desc
+        precision: 0
+      - title: Amharic
+        key: amh_pearson_r
+        index: 2
+        sorting: desc
+        precision: 6
+      - title: Algerian Arabic
+        key: arq_pearson_r
+        index: 3
+        sorting: desc
+        precision: 6
+      - title: Mandarin Chinese
+        key: chn_pearson_r
+        index: 4
+        sorting: desc
+        precision: 6
+      - title: German
+        key: deu_pearson_r
+        index: 5
+        sorting: desc
+        precision: 6
+      - title: English
+        key: eng_pearson_r
+        index: 6
+        sorting: desc
+        precision: 6
+      - title: Spanish (Latin American)
+        key: esp_pearson_r
+        index: 7
+        sorting: desc
+        precision: 6
+      - title: Hausa
+        key: hau_pearson_r
+        index: 8
+        sorting: desc
+        precision: 6
+      - title: Portuguese (Brazilian)
+        key: ptbr_pearson_r
+        index: 9
+        sorting: desc
+        precision: 6
+      - title: Romanian
+        key: ron_pearson_r
+        index: 10
+        sorting: desc
+        precision: 6
+      - title: Russian
+        key: rus_pearson_r
+        index: 11
+        sorting: desc
+        precision: 6
+      - title: Ukrainian
+        key: ukr_pearson_r
+        index: 12
+        sorting: desc
+        precision: 6

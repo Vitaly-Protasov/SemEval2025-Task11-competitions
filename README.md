@@ -1,34 +1,43 @@
 # SemEval 2025 Task 11 Competitions
 
 This repository contains the Codabench bundle source code for the following competitions:
-1) **Track A competition:**
+1) **Track A competition**
 - Source code: [semeval2025_track_a_codabench_bundle_src](./semeval2025_track_a_codabench_bundle_src)
-- Codebench link: https://www.codabench.org/competitions/16415/
+- Codabench link: `https://www.codabench.org/competitions/16415/`
+- Bundle: [semeval2025_track_a_codabench_bundle_src/bundle.zip](./semeval2025_track_a_codabench_bundle_src/bundle.zip)
 
-## Rebuild The Bundle
+2) **Track B competition**
+- Source code: [semeval2025_track_b_codabench_bundle_src](./semeval2025_track_b_codabench_bundle_src)
+- Codabench link: `https://www.codabench.org/competitions/16424/`
+- Bundle: [semeval2025_track_b_codabench_bundle_src/bundle.zip](./semeval2025_track_b_codabench_bundle_src/bundle.zip)
 
-To rebuild the internal resource archives and the top-level Codabench upload bundle, run:
+## Rebuild The Bundles
+
+Each task has its own rebuild script.
+
+### Track A
+
+Run:
 
 ```bash
-python3 build_bundle/build_bundle.py
+python3 semeval2025_track_a_codabench_bundle_src/build_bundle.py
 ```
 
-This rebuilds:
+This rebuilds the Track A resource archives and the final Track A `bundle.zip`.
 
-- `resources/track_a_public_data.zip`
-- `resources/track_a_reference_data.zip`
-- `resources/track_a_scoring_program.zip`
-- `resources/track_a_ingestion_program.zip`
-- `resources/track_a_zero_submission.zip`
-- `starting_kit/track_a_zero_submission.zip`
-- `bundle.zip`
+### Track B
 
-The output bundle is:
+Run:
 
-- [bundle.zip](./semeval2025_track_a_codabench_bundle_src/bundle.zip)
+```bash
+python3 semeval2025_track_b_codabench_bundle_src/build_bundle.py
+```
+
+This rebuilds the Track B resource archives and the final Track B `bundle.zip`.
 
 ## Notes
 
 - The rebuild script uses Python's built-in `zipfile` module and does not depend on the system `zip` command.
-- The active bundle source tree lives under `semeval2025_track_a_codabench_bundle_src/`.
-- If you change scoring, pages, public data, reference data, or the starting kit, rerun the rebuild script before uploading a new bundle.
+- The Track A bundle source tree lives under `semeval2025_track_a_codabench_bundle_src/`.
+- The Track B bundle source tree lives under `semeval2025_track_b_codabench_bundle_src/`.
+- If you change scoring, pages, public data, reference data, or the starting kit, rerun the corresponding rebuild script before uploading a new bundle.

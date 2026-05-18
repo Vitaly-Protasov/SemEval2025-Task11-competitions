@@ -7,7 +7,6 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-
 DATASET = "brighter-dataset/BRIGHTER-emotion-categories"
 ROOT = Path(__file__).resolve().parent
 OUTPUT_DIR = ROOT / "official_test_data" / "brighter_emotion_categories" / "test"

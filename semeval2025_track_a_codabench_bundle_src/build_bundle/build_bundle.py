@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 from pathlib import Path
-from zipfile import ZipFile, ZIP_DEFLATED
-
+from zipfile import ZIP_DEFLATED, ZipFile
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BUNDLE_ROOT = REPO_ROOT / "semeval2025_track_a_codabench_bundle_src"

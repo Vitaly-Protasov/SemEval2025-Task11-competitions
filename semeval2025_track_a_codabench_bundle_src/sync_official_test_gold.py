@@ -3,7 +3,6 @@
 import csv
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parent
 OFFICIAL_TEST = ROOT / "official_test_data" / "brighter_emotion_categories" / "test"
 PUBLIC_TEST = ROOT / "public_data" / "track_a" / "test"
@@ -11,9 +10,34 @@ REFERENCE_DATA = ROOT / "build" / "reference_data"
 SAMPLE_SUBMISSION = ROOT / "starting_kit" / "sample_submission" / "track_a"
 
 SUPPORTED_LANGUAGES = [
-    "afr", "arq", "ary", "chn", "deu", "eng", "esp", "hau", "hin", "ibo",
-    "ind", "jav", "kin", "mar", "pcm", "ptbr", "ptmz", "ron", "rus", "sun",
-    "swa", "swe", "tat", "ukr", "vmw", "xho", "yor", "zul",
+    "afr",
+    "arq",
+    "ary",
+    "chn",
+    "deu",
+    "eng",
+    "esp",
+    "hau",
+    "hin",
+    "ibo",
+    "ind",
+    "jav",
+    "kin",
+    "mar",
+    "pcm",
+    "ptbr",
+    "ptmz",
+    "ron",
+    "rus",
+    "sun",
+    "swa",
+    "swe",
+    "tat",
+    "ukr",
+    "vmw",
+    "xho",
+    "yor",
+    "zul",
 ]
 
 LABELS = ["anger", "fear", "joy", "sadness", "surprise"]
@@ -56,7 +80,9 @@ def write_reference_data(language: str, rows: list[dict]) -> None:
         writer = csv.DictWriter(handle, fieldnames=["id"] + LABELS)
         writer.writeheader()
         for row in rows:
-            writer.writerow({"id": row["id"], **{label: row[label] for label in LABELS}})
+            writer.writerow(
+                {"id": row["id"], **{label: row[label] for label in LABELS}}
+            )
 
 
 def write_zero_submission(language: str, rows: list[dict]) -> None:

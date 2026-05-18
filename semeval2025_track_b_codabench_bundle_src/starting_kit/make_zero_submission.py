@@ -3,8 +3,8 @@ import csv
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-PUBLIC_TEST = ROOT.parent / "public_data" / "track_a" / "test"
-OUT = ROOT / "sample_submission" / "track_a"
+PUBLIC_TEST = ROOT.parent / "public_data" / "track_b" / "test"
+OUT = ROOT / "sample_submission" / "track_b"
 
 OUT.mkdir(parents=True, exist_ok=True)
 for path in sorted(PUBLIC_TEST.glob("*.csv")):
