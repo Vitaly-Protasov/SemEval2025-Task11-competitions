@@ -1,7 +1,9 @@
 # SemEval 2025 Task 11 Competitions
 
 This repository contains the Codabench bundle source code for the following competitions:
-- Track A competition: [semeval2025_track_a_codabench_bundle_src](./semeval2025_track_a_codabench_bundle_src)
+1) **Track A competition:**
+- Source code: [semeval2025_track_a_codabench_bundle_src](./semeval2025_track_a_codabench_bundle_src)
+- Codebench link: https://www.codabench.org/competitions/16415/
 
 ## Rebuild The Bundle
 
