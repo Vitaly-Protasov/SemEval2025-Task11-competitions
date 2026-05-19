@@ -6,6 +6,8 @@ The public data download contains:
 - `track_a/dev/*.csv`: development data with labels.
 - `track_a/test/*.csv`: evaluation texts with blank label columns.
 
+This means Track A provides released labeled training data to participants.
+
 Use `train` and `dev` for model development. Use `test` only to build the final prediction files that you upload to Codabench.
 
 Each `test` file contains:

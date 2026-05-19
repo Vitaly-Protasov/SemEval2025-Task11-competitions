@@ -43,6 +43,16 @@ The supported languages in this bundle are:
 - Yoruba
 - isiZulu
 
+## Data Availability
+
+Track A includes released public data for all three standard splits:
+
+- `train`
+- `dev`
+- `test`
+
+The `train` and `dev` splits include labels and can be used for model development. The `test` split is provided for submission generation.
+
 ## What Participants Do
 
 1. Download the public data from the competition page.

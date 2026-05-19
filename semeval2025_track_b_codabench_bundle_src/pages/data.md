@@ -6,6 +6,8 @@ The public data download contains:
 - `track_b/dev/*.csv`: development data with gold intensity labels
 - `track_b/test/*.csv`: evaluation texts with blank intensity columns
 
+This means Track B provides released labeled training data to participants.
+
 Use `train` and `dev` for model development. Use `test` only to build the final prediction files that you upload to Codabench.
 
 Important notes:

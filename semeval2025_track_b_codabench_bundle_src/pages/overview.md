@@ -36,6 +36,18 @@ The supported Track B languages in this bundle are:
 - Russian
 - Ukrainian
 
+## Data Availability
+
+Track B includes released public data for:
+
+- `train`
+- `dev`
+- `test`
+
+The `train` and `dev` splits include gold intensity labels and can be used for model development. The `test` split is provided for submission generation.
+
+Track B is slightly uneven across languages in the released source data, so not every language has every split.
+
 ## What Participants Do
 
 1. Download the public data from the competition page.
