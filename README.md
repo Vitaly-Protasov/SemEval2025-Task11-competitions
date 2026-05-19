@@ -18,7 +18,7 @@ This repository contains the Codabench bundle source code for the following comp
 
 3) **Track C competition**
 - Source code: [semeval2025_track_c_codabench_bundle_src](./semeval2025_track_c_codabench_bundle_src)
-- Original Codabench link: `https://www.codabench.org/competitions/4892/`
+- Original Codabench link: `https://www.codabench.org/competitions/16455/`
 - Bundle: [semeval2025_track_c_codabench_bundle_src/bundle.zip](./semeval2025_track_c_codabench_bundle_src/bundle.zip)
 - Public data in this bundle includes only `dev` and `test`.
 - Track C does not provide released training data in this reproduction.
